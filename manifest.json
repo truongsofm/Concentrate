@@ -1,0 +1,23 @@
+{
+	"manifest_version":2,
+	"name":"Concentrate Extension",
+	"version":"0.0.1",
+	"icons":{
+		"16":"image/16.png",
+		"48":"image/48.png",
+		"128":"image/128.png"
+	},
+	"content_scripts":[
+		{
+			"matches":[
+				"*://*.facebook.com/*",
+				"*://*.youtube.com/*"
+			],
+			"js":["content.js"],
+			"css":["style.css"]
+		}
+	],
+	"web_accessible_resources":[
+		"image/alert.jpg"
+	]
+}
